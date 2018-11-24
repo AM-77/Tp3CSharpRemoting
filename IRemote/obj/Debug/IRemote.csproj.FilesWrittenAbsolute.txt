@@ -1,0 +1,5 @@
+/home/amine/workspace-csharp/Tp3CS-AppliMailBox/IRemote/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/amine/workspace-csharp/Tp3CS-AppliMailBox/IRemote/bin/Debug/IRemote.dll.mdb
+/home/amine/workspace-csharp/Tp3CS-AppliMailBox/IRemote/bin/Debug/IRemote.dll
+/home/amine/workspace-csharp/Tp3CS-AppliMailBox/IRemote/obj/Debug/IRemote.dll
+/home/amine/workspace-csharp/Tp3CS-AppliMailBox/IRemote/obj/Debug/IRemote.dll.mdb
