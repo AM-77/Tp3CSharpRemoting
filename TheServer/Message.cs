@@ -2,7 +2,7 @@
 
 namespace TheServer
 {
-	public static class Message
+	public class Message
 	{
 		private String sender { set; get; }
 		private String receiver { set; get; }

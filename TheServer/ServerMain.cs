@@ -14,10 +14,12 @@ namespace TheServer
 
 				TcpChannel tcpChannel = new TcpChannel(1995);
 				ChannelServices.RegisterChannel(tcpChannel, false);
-				RemotingConfiguration.RegisterActivatedServiceType(typeof(MailBox), "mailBoxObj",WellKnownObjectMode.Singleton);
 
+				RemotingConfiguration.RegisterWellKnownServiceType(typeof(MailBox),
+					"mailBoxObj", WellKnownObjectMode.Singleton);
+				
 				Console.Write("[+] The server is running ...");
-
+				Console.ReadLine();
 			}catch(Exception e){
 				Console.Write ("[!] There was an error in the serverMain : {0}", e.Message);
 			}

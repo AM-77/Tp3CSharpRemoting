@@ -12,11 +12,11 @@ namespace TheServer
 		{
 		}
 
-		void sendMsg(Message msg){
+		public void sendMsg(IRemote.Message msg){
 			msgs.Add (msg);
 		}
 
-		Message[] receiveMsg(){
+		public ArrayList receiveMsg(){
 			return msgs;
 		}
 	}
