@@ -33,15 +33,18 @@ namespace TheClientSender {
 
 						Console.Write( "[+] Message sent.\nSend an other message? y/n : " );
 						String resend = Console.ReadLine();
+
 						while(true){
-							if( resend != "y" && resend != "n" ){
+							if( !resend.Equals("y") && !resend.Equals("n") ){
 								Console.Write( "[!] Invalid input try with y/n : " );
 								resend = Console.ReadLine();
 							}else{
-								if(resend == "n"){
+								if(resend.Equals("n")){
 									sending = false;
-									break;
+									Console.Write( "[^_^] Bey! " );
 								}
+
+								break;
 							}
 						}
 

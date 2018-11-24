@@ -7,25 +7,24 @@ using System.Collections;
 
 namespace TheClientReceiver {
 	class ClientReceiver {
-		
+
 		static void Main(string[] args) {
 			try{
 				TcpChannel chl = new TcpChannel();
 				ChannelServices.RegisterChannel(chl, false);
-				IMailBox obj = (IMailBox)Activator.GetObject(typeof(IMailBox),"tcp://localhost:1234/mailBoxObj");
+				IMailBox mailBox = (IMailBox)Activator.GetObject(typeof(IMailBox),"tcp://localhost:1234/mailBoxObj");
 
-
-				if (obj == null ){
+				if (mailBox == null ){
 					Console.WriteLine("[!] Object not resolved. " );
 				}else {
 					Console.WriteLine( "[+] Object recieved." );
-
-
-					ArrayList msgs = obj.receiveMsg();
+					ArrayList msgs = mailBox.receiveMsg();
+					ArrayList new_msgs = new ArrayList();
 
 					foreach (Message msg in msgs){
 						Console.WriteLine("The sender: {0}\nThe reciever: {1}\nThe content: {2}\n\n", msg.sender, msg.receiver, msg.content);
 					}
+
 				}
 			}
 			catch (Exception e ) {
