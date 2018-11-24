@@ -12,7 +12,7 @@ namespace TheServer
 		{
 			try{
 
-				TcpChannel tcpChannel = new TcpChannel(1995);
+				TcpChannel tcpChannel = new TcpChannel(1234);
 				ChannelServices.RegisterChannel(tcpChannel, false);
 
 				RemotingConfiguration.RegisterWellKnownServiceType(typeof(MailBox),
