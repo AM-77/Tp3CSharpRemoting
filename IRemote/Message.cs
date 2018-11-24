@@ -2,11 +2,12 @@
 
 namespace IRemote
 {
+	[Serializable]
 	public class Message
 	{
-		private String sender { set; get; }
-		private String receiver { set; get; }
-		private String content { set; get; }
+		public String sender { set; get; }
+		public String receiver { set; get; }
+		public String content { set; get; }
 
 		public Message (String sender, String receiver, String content)
 		{
