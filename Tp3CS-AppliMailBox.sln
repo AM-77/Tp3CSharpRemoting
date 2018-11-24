@@ -3,12 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IRemote", "IRemote\IRemote.csproj", "{8FDDB092-6C89-4FF3-A509-D36C34293546}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheServer", "TheServer\TheServer.csproj", "{4DBC452E-235F-4CCD-85EA-35FE8E474446}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4DBC452E-235F-4CCD-85EA-35FE8E474446}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DBC452E-235F-4CCD-85EA-35FE8E474446}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DBC452E-235F-4CCD-85EA-35FE8E474446}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DBC452E-235F-4CCD-85EA-35FE8E474446}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8FDDB092-6C89-4FF3-A509-D36C34293546}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8FDDB092-6C89-4FF3-A509-D36C34293546}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FDDB092-6C89-4FF3-A509-D36C34293546}.Release|Any CPU.ActiveCfg = Release|Any CPU
