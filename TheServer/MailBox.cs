@@ -15,9 +15,6 @@ namespace TheServer
 			msgs.Add (new Message("Amine","Houssam","Wsh"));
 			msgs.Add (new Message("Houssam","Amine","cv?"));
 			msgs.Add (new Message("Amine","Houssam","oui cool"));
-			msgs.Add (new Message("Houssam","Amine","wusup !"));
-			msgs.Add (new Message("Amine","Houssam","Rou7 t3ti b3iid"));
-			msgs.Add (new Message("Houssam","Amine","lool"));
 
 		}
 
