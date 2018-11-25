@@ -1,3 +1,5 @@
+./*.userprefs
+./*.sln
 ./IRemote/*.csproj
 ./IRemote/bin/*
 ./IRemote/obj/*
