@@ -19,7 +19,6 @@ namespace TheClientReceiver {
 				}else {
 					Console.WriteLine( "[+] Object recieved." );
 					ArrayList msgs = mailBox.receiveMsg();
-					ArrayList new_msgs = new ArrayList();
 
 					foreach (Message msg in msgs){
 						Console.WriteLine("The sender: {0}\nThe reciever: {1}\nThe content: {2}\n\n", msg.sender, msg.receiver, msg.content);
