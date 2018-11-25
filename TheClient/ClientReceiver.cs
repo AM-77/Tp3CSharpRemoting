@@ -12,7 +12,10 @@ namespace TheClientReceiver {
 			try{
 				TcpChannel chl = new TcpChannel();
 				ChannelServices.RegisterChannel(chl, false);
-				IMailBox mailBox = (IMailBox)Activator.GetObject(typeof(IMailBox),"tcp://localhost:1234/mailBoxObj");
+
+				//IMailBox mailBox = (IMailBox)Activator.GetObject(typeof(IMailBox),"tcp://localhost:1234/mailBoxObj");
+				IFabrique fab = (IFabrique)Activator.GetObject(typeof(IFabrique),"tcp://localhost:1234/fabObj");
+				IMailBox mailBox = fab.getMailBox();
 
 				if (mailBox == null ){
 					Console.WriteLine("[!] Object not resolved. " );

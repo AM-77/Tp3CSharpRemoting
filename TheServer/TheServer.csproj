@@ -35,6 +35,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MailBox.cs" />
     <Compile Include="ServerMain.cs" />
+    <Compile Include="Fabrique.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

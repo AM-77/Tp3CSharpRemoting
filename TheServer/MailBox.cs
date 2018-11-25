@@ -2,15 +2,16 @@
 using System.Collections;
 using IRemote;
 
-namespace TheServer
-{
-	public class MailBox : MarshalByRefObject, IRemote.IMailBox
-	{
-		
+namespace TheServer{
+	public class MailBox : MarshalByRefObject, IRemote.IMailBox{
+
 		private static ArrayList msgs = new ArrayList();
 
-		public MailBox ()
-		{
+		public MailBox(){
+			msgs.Add (new Message("dsfsdf","fdsdsf","dsfds"));
+			msgs.Add (new Message("dsfsdf","fdsdsf","dsfds"));
+			msgs.Add (new Message("dsfsdf","fdsdsf","dsfds"));
+
 		}
 
 		public void sendMsg(Message msg){
