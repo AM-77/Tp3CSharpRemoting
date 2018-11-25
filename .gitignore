@@ -1,0 +1,8 @@
+./IRemote/bin/*
+./IRemote/obj/*
+./TheClient/bin/*
+./TheClient/obj/*
+./TheClientSender/bin/*
+./TheClientSender/obj/*
+./TheServer/bin/*
+./TheServer/obj/*
