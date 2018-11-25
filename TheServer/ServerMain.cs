@@ -11,8 +11,8 @@ namespace TheServer{
 				TcpChannel tcpChannel = new TcpChannel(1234);
 				ChannelServices.RegisterChannel(tcpChannel, false);
 
-//				RemotingConfiguration.RegisterWellKnownServiceType(typeof(MailBox),"mailBoxObj", WellKnownObjectMode.Singleton);
-				RemotingConfiguration.RegisterWellKnownServiceType(typeof(Fabrique), "fabObj", WellKnownObjectMode.Singleton);
+				//RemotingConfiguration.RegisterWellKnownServiceType(typeof(MailBox),"mailBoxObj", WellKnownObjectMode.Singleton); /* SingleCall */
+				RemotingConfiguration.RegisterWellKnownServiceType(typeof(Fabrique), "fabObj", WellKnownObjectMode.Singleton); /* SingleCall */
 
 				Console.Write("[+] The server is running ...  \n[INFO] Rememeber to activate win32 in .bashrc");
 				Console.ReadLine();
