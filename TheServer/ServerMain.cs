@@ -18,7 +18,7 @@ namespace TheServer
 				RemotingConfiguration.RegisterWellKnownServiceType(typeof(MailBox),
 					"mailBoxObj", WellKnownObjectMode.Singleton);
 				
-				Console.Write("[+] The server is running ...");
+				Console.Write("[+] The server is running ...  \n Rememeber to activate win32 in .bashrc");
 				Console.ReadLine();
 			}catch(Exception e){
 				Console.Write ("[!] There was an error in the serverMain : {0}", e.Message);
