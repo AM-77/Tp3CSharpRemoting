@@ -2,8 +2,14 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="TheServer/ServerMain.cs">
     <Files>
-      <File FileName="TheClient/ClientReceiver.cs" Line="6" Column="26" />
-      <File FileName="TheServer/ServerMain.cs" Line="21" Column="92" />
+      <File FileName="TheClient/ClientReceiver.cs" Line="17" Column="73" />
+      <File FileName="TheServer/ServerMain.cs" Line="17" Column="1" />
+      <File FileName="TheClientSender/ClientSender.cs" Line="17" Column="136" />
+      <File FileName="IRemote/IFabrique.cs" Line="7" Column="25" />
+      <File FileName="IRemote/IMailBox.cs" Line="7" Column="3" />
+      <File FileName="TheServer/MailBox.cs" Line="11" Column="3" />
+      <File FileName="TheServer/Fabrique.cs" Line="8" Column="4" />
+      <File FileName="IRemote/Message.cs" Line="5" Column="8" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
