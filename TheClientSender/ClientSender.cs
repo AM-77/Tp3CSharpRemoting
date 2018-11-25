@@ -14,7 +14,6 @@ namespace TheClientSender {
 				ChannelServices.RegisterChannel(chl, false);
 				IMailBox mailBox = (IMailBox)Activator.GetObject(typeof(IMailBox),"tcp://localhost:1234/mailBoxObj");
 
-
 				if (mailBox == null ){
 					Console.WriteLine("[!] Object not resolved. " );
 				}else {
@@ -22,33 +21,22 @@ namespace TheClientSender {
 					Boolean sending = true;
 					Console.Write( "Sender Name: " );
 					String sender = Console.ReadLine();
+					Console.Write( "Receiver Name: " );
+					String receiver = Console.ReadLine();
 
+					Console.Write( "\n[INFO] Type [QUIT] to exit.\n");
 					while(sending){
-						Console.Write( "Receiver Name: " );
-						String receiver = Console.ReadLine();
+
 						Console.Write( "The message: " );
 						String msg = Console.ReadLine();
 
-						mailBox.sendMsg(new Message(sender, receiver, msg));
-
-						Console.Write( "[+] Message sent.\nSend an other message? y/n : " );
-						String resend = Console.ReadLine();
-
-						while(true){
-							if( !resend.Equals("y") && !resend.Equals("n") ){
-								Console.Write( "[!] Invalid input try with y/n : " );
-								resend = Console.ReadLine();
-							}else{
-								if(resend.Equals("n")){
-									sending = false;
-									Console.Write( "[^_^] Bey! " );
-								}
-
-								break;
-							}
+						if(msg.Equals("[QUIT]")){
+							sending = false;
+							Console.Write( "[^_^] Bye! " );
+						}else{
+							mailBox.sendMsg(new Message(sender, receiver, msg));
 						}
-
-
+			
 					}
 				}
 			}
